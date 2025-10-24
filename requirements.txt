@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scikit-learn
+jupyter
+missingno
+ydata-profiling
+sweetviz
+scipy
+argparse
+jinja2
+base64
