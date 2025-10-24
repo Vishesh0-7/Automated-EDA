@@ -1,0 +1,276 @@
+{
+  "basic_info": {
+    "file_path": "data/loan_approval.csv",
+    "shape": [
+      2000,
+      8
+    ],
+    "columns": [
+      "name",
+      "city",
+      "income",
+      "credit_score",
+      "loan_amount",
+      "years_employed",
+      "points",
+      "loan_approved"
+    ],
+    "data_types": {
+      "name": "object",
+      "city": "object",
+      "income": "int64",
+      "credit_score": "int64",
+      "loan_amount": "int64",
+      "years_employed": "int64",
+      "points": "float64",
+      "loan_approved": "bool"
+    },
+    "memory_usage": 328693,
+    "load_timestamp": "2025-10-23T23:05:18.106257"
+  },
+  "basic_stats": {
+    "total_rows": 2000,
+    "total_columns": 8,
+    "numeric_columns": 5,
+    "categorical_columns": 2,
+    "datetime_columns": 0,
+    "total_missing_values": 0,
+    "missing_percentage": 0.0,
+    "duplicate_rows": 0
+  },
+  "missing_data": {
+    "by_column": {
+      "name": 0,
+      "city": 0,
+      "income": 0,
+      "credit_score": 0,
+      "loan_amount": 0,
+      "years_employed": 0,
+      "points": 0,
+      "loan_approved": 0
+    },
+    "by_percentage": {
+      "name": 0.0,
+      "city": 0.0,
+      "income": 0.0,
+      "credit_score": 0.0,
+      "loan_amount": 0.0,
+      "years_employed": 0.0,
+      "points": 0.0,
+      "loan_approved": 0.0
+    }
+  },
+  "unique_values": {
+    "name": {
+      "count": 2000,
+      "percentage": 100.0
+    },
+    "city": {
+      "count": 1882,
+      "percentage": 94.1
+    },
+    "income": {
+      "count": 1988,
+      "percentage": 99.4
+    },
+    "credit_score": {
+      "count": 537,
+      "percentage": 26.85
+    },
+    "loan_amount": {
+      "count": 1968,
+      "percentage": 98.4
+    },
+    "years_employed": {
+      "count": 41,
+      "percentage": 2.0500000000000003
+    },
+    "points": {
+      "count": 19,
+      "percentage": 0.95
+    },
+    "loan_approved": {
+      "count": 2,
+      "percentage": 0.1
+    }
+  },
+  "numeric_statistics": {
+    "income": {
+      "count": 2000,
+      "mean": 90585.977,
+      "median": 90387.5,
+      "mode": 104177,
+      "std": 34487.874906933146,
+      "min": 30053.0,
+      "max": 149964.0,
+      "q25": 61296.25,
+      "q75": 120099.75,
+      "skewness": -0.012115999731385175,
+      "kurtosis": -1.1999095317662922,
+      "variance": 1189413515.5962691
+    },
+    "credit_score": {
+      "count": 2000,
+      "mean": 573.946,
+      "median": 576.0,
+      "mode": 395,
+      "std": 160.56494522409744,
+      "min": 300.0,
+      "max": 850.0,
+      "q25": 433.0,
+      "q75": 715.0,
+      "skewness": 0.0017205540306714205,
+      "kurtosis": -1.2416677645901166,
+      "variance": 25781.10163481741
+    },
+    "loan_amount": {
+      "count": 2000,
+      "mean": 25308.503,
+      "median": 25661.5,
+      "mode": 1774,
+      "std": 14207.320146842205,
+      "min": 1022.0,
+      "max": 49999.0,
+      "q25": 12748.75,
+      "q75": 37380.5,
+      "skewness": 0.007862566690607996,
+      "kurtosis": -1.2091151429412694,
+      "variance": 201847945.75486842
+    },
+    "years_employed": {
+      "count": 2000,
+      "mean": 20.441,
+      "median": 21.0,
+      "mode": 23,
+      "std": 11.777812931046212,
+      "min": 0.0,
+      "max": 40.0,
+      "q25": 10.0,
+      "q75": 31.0,
+      "skewness": -0.027956568967589055,
+      "kurtosis": -1.1924681806680584,
+      "variance": 138.71687743871937
+    },
+    "points": {
+      "count": 2000,
+      "mean": 56.68,
+      "median": 55.0,
+      "mode": 50.0,
+      "std": 18.638033376514596,
+      "min": 10.0,
+      "max": 100.0,
+      "q25": 45.0,
+      "q75": 70.0,
+      "skewness": 0.23144642311354405,
+      "kurtosis": -0.5735033518119916,
+      "variance": 347.3762881440721
+    }
+  },
+  "categorical_statistics": {
+    "name": {
+      "unique_count": 2000,
+      "most_frequent": "Nicholas Cunningham",
+      "most_frequent_count": 1,
+      "least_frequent": "Allison Hill",
+      "least_frequent_count": 1,
+      "top_5_values": {
+        "Nicholas Cunningham": 1,
+        "Raymond Wolf": 1,
+        "Lucas Nielsen": 1,
+        "Michelle Padilla": 1,
+        "Steven Price": 1
+      }
+    },
+    "city": {
+      "unique_count": 1882,
+      "most_frequent": "North Joseph",
+      "most_frequent_count": 4,
+      "least_frequent": "South Amandafort",
+      "least_frequent_count": 1,
+      "top_5_values": {
+        "North Joseph": 4,
+        "Williamsstad": 3,
+        "Port Christopher": 3,
+        "Port Michael": 3,
+        "Leeland": 3
+      }
+    }
+  },
+  "outliers": {
+    "iqr": {
+      "income": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "credit_score": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "loan_amount": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "years_employed": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "points": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      }
+    },
+    "zscore": {
+      "income": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "credit_score": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "loan_amount": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "years_employed": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      },
+      "points": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      }
+    }
+  },
+  "visualizations": {
+    "plot_files": [
+      "test_output/plots/data_overview.png",
+      "test_output/plots/missing_data_matrix.png",
+      "test_output/plots/missing_data_bar.png",
+      "test_output/plots/distribution_income.png",
+      "test_output/plots/distribution_credit_score.png",
+      "test_output/plots/distribution_loan_amount.png",
+      "test_output/plots/distribution_years_employed.png",
+      "test_output/plots/distribution_points.png",
+      "test_output/plots/all_distributions.png",
+      "test_output/plots/correlation_heatmap.png",
+      "test_output/plots/pairplot.png",
+      "test_output/plots/outliers_income.png",
+      "test_output/plots/outliers_credit_score.png",
+      "test_output/plots/outliers_loan_amount.png",
+      "test_output/plots/outliers_years_employed.png",
+      "test_output/plots/outliers_points.png"
+    ],
+    "total_plots": 16
+  }
+}

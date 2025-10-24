@@ -1,0 +1,384 @@
+{
+  "basic_info": {
+    "file_path": "data/sample_employee_data.csv",
+    "shape": [
+      1000,
+      7
+    ],
+    "columns": [
+      "age",
+      "salary",
+      "experience_years",
+      "department",
+      "education",
+      "performance_score",
+      "satisfaction"
+    ],
+    "data_types": {
+      "age": "float64",
+      "salary": "float64",
+      "experience_years": "int64",
+      "department": "object",
+      "education": "object",
+      "performance_score": "float64",
+      "satisfaction": "float64"
+    },
+    "memory_usage": 152332,
+    "load_timestamp": "2025-10-23T23:03:36.967400"
+  },
+  "basic_stats": {
+    "total_rows": 1000,
+    "total_columns": 7,
+    "numeric_columns": 5,
+    "categorical_columns": 2,
+    "datetime_columns": 0,
+    "total_missing_values": 50,
+    "missing_percentage": 0.7142857142857143,
+    "duplicate_rows": 0
+  },
+  "missing_data": {
+    "by_column": {
+      "age": 0,
+      "salary": 0,
+      "experience_years": 0,
+      "department": 0,
+      "education": 0,
+      "performance_score": 0,
+      "satisfaction": 50
+    },
+    "by_percentage": {
+      "age": 0.0,
+      "salary": 0.0,
+      "experience_years": 0.0,
+      "department": 0.0,
+      "education": 0.0,
+      "performance_score": 0.0,
+      "satisfaction": 5.0
+    }
+  },
+  "unique_values": {
+    "age": {
+      "count": 1000,
+      "percentage": 100.0
+    },
+    "salary": {
+      "count": 1000,
+      "percentage": 100.0
+    },
+    "experience_years": {
+      "count": 13,
+      "percentage": 1.3
+    },
+    "department": {
+      "count": 4,
+      "percentage": 0.4
+    },
+    "education": {
+      "count": 4,
+      "percentage": 0.4
+    },
+    "performance_score": {
+      "count": 1000,
+      "percentage": 100.0
+    },
+    "satisfaction": {
+      "count": 950,
+      "percentage": 95.0
+    }
+  },
+  "numeric_statistics": {
+    "age": {
+      "count": 1000,
+      "mean": 35.193320558223256,
+      "median": 35.25300612234888,
+      "mode": 2.587326599309272,
+      "std": 9.792159381796756,
+      "min": 2.587326599309272,
+      "max": 73.52731490654722,
+      "q25": 28.524096945376485,
+      "q75": 41.4794387547293,
+      "skewness": 0.11697636882001375,
+      "kurtosis": 0.07256220235414812,
+      "variance": 95.88638535851024
+    },
+    "salary": {
+      "count": 1000,
+      "mean": 50399.29668484338,
+      "median": 36296.56103424651,
+      "mode": 161.17266761173124,
+      "std": 50149.42544926654,
+      "min": 161.17266761173124,
+      "max": 372086.1454852203,
+      "q25": 14197.725844037846,
+      "q75": 68584.21265330183,
+      "skewness": 1.9837888698617532,
+      "kurtosis": 5.4124589258305225,
+      "variance": 2514964872.8915424
+    },
+    "experience_years": {
+      "count": 1000,
+      "mean": 4.929,
+      "median": 5.0,
+      "mode": 5,
+      "std": 2.096748758281582,
+      "min": 0.0,
+      "max": 12.0,
+      "q25": 3.0,
+      "q75": 6.0,
+      "skewness": 0.34153457983054153,
+      "kurtosis": -0.020045021525912254,
+      "variance": 4.396355355355356
+    },
+    "performance_score": {
+      "count": 1000,
+      "mean": 28.244215960299197,
+      "median": 25.669480244613098,
+      "mode": 0.7263757171461416,
+      "std": 16.297702792535404,
+      "min": 0.7263757171461416,
+      "max": 84.49393803434533,
+      "q25": 15.518593156700112,
+      "q75": 39.18479661540734,
+      "skewness": 0.6599770478151133,
+      "kurtosis": 0.00048102867944521677,
+      "variance": 265.6151163138163
+    },
+    "satisfaction": {
+      "count": 950,
+      "mean": 5.563465548910872,
+      "median": 5.583412853194971,
+      "mode": 1.0049876612672852,
+      "std": 2.5634602868820613,
+      "min": 1.0049876612672852,
+      "max": 9.99513160467762,
+      "q25": 3.3357828163855205,
+      "q75": 7.847254666111,
+      "skewness": -0.03559701640348064,
+      "kurtosis": -1.155713957741745,
+      "variance": 6.571328642421459
+    }
+  },
+  "categorical_statistics": {
+    "department": {
+      "unique_count": 4,
+      "most_frequent": "HR",
+      "most_frequent_count": 265,
+      "least_frequent": "Sales",
+      "least_frequent_count": 219,
+      "top_5_values": {
+        "HR": 265,
+        "Marketing": 260,
+        "Engineering": 256,
+        "Sales": 219
+      }
+    },
+    "education": {
+      "unique_count": 4,
+      "most_frequent": "Bachelor",
+      "most_frequent_count": 409,
+      "least_frequent": "PhD",
+      "least_frequent_count": 98,
+      "top_5_values": {
+        "Bachelor": 409,
+        "Master": 314,
+        "High School": 179,
+        "PhD": 98
+      }
+    }
+  },
+  "outliers": {
+    "iqr": {
+      "age": {
+        "count": 8,
+        "percentage": 0.8,
+        "indices": [
+          74,
+          179,
+          209,
+          262,
+          478,
+          646,
+          668,
+          755
+        ]
+      },
+      "salary": {
+        "count": 55,
+        "percentage": 5.5,
+        "indices": [
+          28,
+          37,
+          38,
+          52,
+          74,
+          86,
+          92,
+          128,
+          129,
+          131,
+          144,
+          168,
+          170,
+          216,
+          248,
+          254,
+          288,
+          295,
+          320,
+          327,
+          342,
+          368,
+          385,
+          402,
+          404,
+          419,
+          422,
+          431,
+          458,
+          460,
+          477,
+          504,
+          519,
+          531,
+          534,
+          568,
+          593,
+          610,
+          616,
+          658,
+          700,
+          724,
+          731,
+          737,
+          782,
+          795,
+          813,
+          826,
+          828,
+          869,
+          904,
+          917,
+          947,
+          978,
+          990
+        ]
+      },
+      "experience_years": {
+        "count": 9,
+        "percentage": 0.8999999999999999,
+        "indices": [
+          84,
+          111,
+          141,
+          193,
+          214,
+          237,
+          249,
+          267,
+          576
+        ]
+      },
+      "performance_score": {
+        "count": 6,
+        "percentage": 0.6,
+        "indices": [
+          38,
+          165,
+          272,
+          521,
+          804,
+          939
+        ]
+      },
+      "satisfaction": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      }
+    },
+    "zscore": {
+      "age": {
+        "count": 3,
+        "percentage": 0.3,
+        "indices": [
+          209,
+          262,
+          478
+        ]
+      },
+      "salary": {
+        "count": 20,
+        "percentage": 2.0,
+        "indices": [
+          37,
+          52,
+          128,
+          168,
+          288,
+          295,
+          320,
+          342,
+          368,
+          419,
+          422,
+          431,
+          568,
+          593,
+          616,
+          658,
+          782,
+          813,
+          828,
+          947
+        ]
+      },
+      "experience_years": {
+        "count": 1,
+        "percentage": 0.1,
+        "indices": [
+          84
+        ]
+      },
+      "performance_score": {
+        "count": 5,
+        "percentage": 0.5,
+        "indices": [
+          38,
+          272,
+          521,
+          804,
+          939
+        ]
+      },
+      "satisfaction": {
+        "count": 0,
+        "percentage": 0.0,
+        "indices": []
+      }
+    }
+  },
+  "visualizations": {
+    "plot_files": [
+      "example_output/plots/data_overview.png",
+      "example_output/plots/missing_data_matrix.png",
+      "example_output/plots/missing_data_bar.png",
+      "example_output/plots/missing_data_heatmap.png",
+      "example_output/plots/distribution_age.png",
+      "example_output/plots/distribution_salary.png",
+      "example_output/plots/distribution_experience_years.png",
+      "example_output/plots/distribution_performance_score.png",
+      "example_output/plots/distribution_satisfaction.png",
+      "example_output/plots/all_distributions.png",
+      "example_output/plots/countplot_department.png",
+      "example_output/plots/countplot_education.png",
+      "example_output/plots/correlation_heatmap.png",
+      "example_output/plots/pairplot.png",
+      "example_output/plots/outliers_age.png",
+      "example_output/plots/outliers_salary.png",
+      "example_output/plots/outliers_experience_years.png",
+      "example_output/plots/outliers_performance_score.png",
+      "example_output/plots/outliers_satisfaction.png"
+    ],
+    "total_plots": 19
+  }
+}

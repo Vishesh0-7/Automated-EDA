@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated EDA Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; border-left: 4px solid #3498db; padding-left: 15px; }
+        .stat-grid { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .stat-card { background: #ecf0f1; padding: 15px; border-radius: 8px; text-align: center; min-width: 150px; }
+        .stat-value { font-size: 24px; font-weight: bold; color: #2c3e50; }
+        .stat-label { color: #7f8c8d; font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f8f9fa; }
+        .plot-grid { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; }
+        .plot-container { text-align: center; max-width: 400px; }
+        .plot-container img { max-width: 100%; height: auto; border-radius: 8px; }
+        .key-findings { background: #667eea; color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .findings-list { list-style: none; padding: 0; }
+        .findings-list li { margin: 10px 0; padding-left: 25px; }
+        .timestamp { text-align: center; color: #6c757d; font-style: italic; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Automated EDA Report</h1>
+        <div class="timestamp">Generated on 2025-10-23 23:05:25</div>
+        
+        <div class="section">
+            <h2>📊 Dataset Overview</h2>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-value">2,000</div>
+                    <div class="stat-label">Total Rows</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Total Columns</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Numeric Columns</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Categorical Columns</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">0.0%</div>
+                    <div class="stat-label">Missing Data</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Duplicate Rows</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 Key Findings</h2>
+            <div class="key-findings">
+                <h3 style="margin-top:0; color:white;">Summary of Important Insights</h3>
+                <ul class='findings-list'><li>No missing data found - dataset is complete</li><li>Dataset contains 5 numeric columns suitable for correlation analysis</li></ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📈 Column Information</h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Column Name</th>
+                    <th>Data Type</th>
+                    <th>Non-Null Count</th>
+                    <th>Missing %</th>
+                    <th>Unique Values</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                <tr>
+                    <td><strong>name</strong></td>
+                    <td>object</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>2,000</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>city</strong></td>
+                    <td>object</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>1,882</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>income</strong></td>
+                    <td>int64</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>1,988</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>credit_score</strong></td>
+                    <td>int64</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>537</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>loan_amount</strong></td>
+                    <td>int64</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>1,968</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>years_employed</strong></td>
+                    <td>int64</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>points</strong></td>
+                    <td>float64</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>loan_approved</strong></td>
+                    <td>bool</td>
+                    <td>2,000</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                </tr>
+            
+            </tbody>
+        </table>
+        
+        </div>
+        
+        
+        <div class="section">
+            <h2>📊 Numeric Statistics</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Mean</th>
+                        <th>Median</th>
+                        <th>Std Dev</th>
+                        <th>Min</th>
+                        <th>Max</th>
+                        <th>Skewness</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                <tr>
+                    <td><strong>income</strong></td>
+                    <td>90585.98</td>
+                    <td>90387.50</td>
+                    <td>34487.87</td>
+                    <td>30053.00</td>
+                    <td>149964.00</td>
+                    <td>-0.01</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>credit_score</strong></td>
+                    <td>573.95</td>
+                    <td>576.00</td>
+                    <td>160.56</td>
+                    <td>300.00</td>
+                    <td>850.00</td>
+                    <td>0.00</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>loan_amount</strong></td>
+                    <td>25308.50</td>
+                    <td>25661.50</td>
+                    <td>14207.32</td>
+                    <td>1022.00</td>
+                    <td>49999.00</td>
+                    <td>0.01</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>years_employed</strong></td>
+                    <td>20.44</td>
+                    <td>21.00</td>
+                    <td>11.78</td>
+                    <td>0.00</td>
+                    <td>40.00</td>
+                    <td>-0.03</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>points</strong></td>
+                    <td>56.68</td>
+                    <td>55.00</td>
+                    <td>18.64</td>
+                    <td>10.00</td>
+                    <td>100.00</td>
+                    <td>0.23</td>
+                </tr>
+            
+                </tbody>
+            </table>
+        </div>
+        
+        
+        
+        <div class="section">
+            <h2>📝 Categorical Statistics</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Unique Values</th>
+                        <th>Most Frequent</th>
+                        <th>Frequency</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                <tr>
+                    <td><strong>name</strong></td>
+                    <td>2000</td>
+                    <td>Nicholas Cunningham</td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>city</strong></td>
+                    <td>1882</td>
+                    <td>North Joseph</td>
+                    <td>4</td>
+                </tr>
+            
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="section">
+            <h2>📊 Visualizations</h2>
+            <p>The following visualizations have been generated for your dataset:</p>
+            <div class='plot-grid'>
+                    <div class="plot-container">
+                        <h4>Data Overview</h4>
+                        <img src="plots/data_overview.png" alt="Data Overview">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Missing Data Matrix</h4>
+                        <img src="plots/missing_data_matrix.png" alt="Missing Data Matrix">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Missing Data Bar</h4>
+                        <img src="plots/missing_data_bar.png" alt="Missing Data Bar">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Distribution Income</h4>
+                        <img src="plots/distribution_income.png" alt="Distribution Income">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Distribution Credit Score</h4>
+                        <img src="plots/distribution_credit_score.png" alt="Distribution Credit Score">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Distribution Loan Amount</h4>
+                        <img src="plots/distribution_loan_amount.png" alt="Distribution Loan Amount">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Distribution Years Employed</h4>
+                        <img src="plots/distribution_years_employed.png" alt="Distribution Years Employed">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Distribution Points</h4>
+                        <img src="plots/distribution_points.png" alt="Distribution Points">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>All Distributions</h4>
+                        <img src="plots/all_distributions.png" alt="All Distributions">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Correlation Heatmap</h4>
+                        <img src="plots/correlation_heatmap.png" alt="Correlation Heatmap">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Pairplot</h4>
+                        <img src="plots/pairplot.png" alt="Pairplot">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Outliers Income</h4>
+                        <img src="plots/outliers_income.png" alt="Outliers Income">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Outliers Credit Score</h4>
+                        <img src="plots/outliers_credit_score.png" alt="Outliers Credit Score">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Outliers Loan Amount</h4>
+                        <img src="plots/outliers_loan_amount.png" alt="Outliers Loan Amount">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Outliers Years Employed</h4>
+                        <img src="plots/outliers_years_employed.png" alt="Outliers Years Employed">
+                    </div>
+                
+                    <div class="plot-container">
+                        <h4>Outliers Points</h4>
+                        <img src="plots/outliers_points.png" alt="Outliers Points">
+                    </div>
+                </div>
+        </div>
+        
+        <div class="section">
+            <h2>� Additional Resources</h2>
+            <p><strong>Note:</strong> Additional detailed profiling reports may be available in the reports/ folder.</p>
+        </div>
+        
+        <div class="timestamp">
+            Report generated by Automated EDA Tool<br>
+            File analyzed: data/loan_approval.csv
+        </div>
+    </div>
+</body>
+</html>
+        
